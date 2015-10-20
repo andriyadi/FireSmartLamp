@@ -50,6 +50,11 @@ Then create a new Firebase app and you'll get an URL, e.g: `http://my-iot.fireba
 
 In `index.js` file, about line 58, change `[YOUR-OWN-FIREBASEAPP]` in `https://[YOUR-OWN-FIREBASEAPP].firebaseio.com` with your Firebase Project ID.
 
+Finally, don't forget to run
+```npm install```
+to download and install all required Node.js modules.
+
+
 That's it (if my memory serves me well :P). Found bugs or issues or have question? Create an issue or you can always contact me at: `an dot dri at me dot com`.
 
 Enjoy!
