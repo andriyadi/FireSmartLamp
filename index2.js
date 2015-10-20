@@ -33,9 +33,9 @@ function setState(state) {
 
 
 //Firebase
-var deviceId = "smartled1";
+var deviceId = "smartlamp1";
 
-var myFirebaseRef = new Firebase("https://dycode-iot.firebaseio.com");
+var myFirebaseRef = new Firebase("https://[YOUR-OWN-FIREBASEAPP].firebaseio.com");
 var devicesFirebaseRef = myFirebaseRef.child("explore");
 
 var deviceRef = devicesFirebaseRef.child(deviceId);

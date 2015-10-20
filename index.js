@@ -53,9 +53,9 @@ var server = app.listen(1337, function () {
 
 
 //4. Get Firebase Ref
-var deviceId = "smartled1";
+var deviceId = "smartlamp1";
 
-var myFirebaseRef = new Firebase("https://dycode-iot.firebaseio.com");
+var myFirebaseRef = new Firebase("https://[YOUR-OWN-FIREBASEAPP].firebaseio.com");
 var devicesFirebaseRef = myFirebaseRef.child("devices");
 
 var deviceRef = devicesFirebaseRef.child(deviceId);
