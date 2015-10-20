@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
-    "firebase": "^2.3.1"
+    "firebase": "^2.3.1",
+    "wiring-pi": "^2.1.0"
   }
 }

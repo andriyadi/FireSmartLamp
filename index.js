@@ -4,14 +4,13 @@
 
 var express = require("express")
     , app = express()
-    , Firebase = require("firebase")
+    , Firebase = require("firebase");
 
 
 //For working with GPIO from Node.js, I use WiringPi wrapper module. You're welcome to use another module, change respective all gpio calls accordingly.
 //More info: https://github.com/eugeneware/wiring-pi
-//To use this module, you MUST install wiring-pi http://wiringpi.com/download-and-install/
 
-var wpi = require('wiring-pi')
+var wpi = require('wiring-pi');
 wpi.setup('gpio');
 
 var ledPin = 26; //26 is pin to LED
@@ -97,7 +96,7 @@ deviceRef.set(deviceDesc, function(err) {
 function listenForParameterChanges() {
     var myDevParamsRef = deviceRef.child("parameters");
     myDevParamsRef.on("child_changed", function(snapshot) {
-        console.log(snapshot.key())
+        console.log(snapshot.key());
         console.log(snapshot.val());
 
         if (snapshot.key() == "state") {
@@ -133,7 +132,7 @@ setInterval(function() {
     var telemetry = {
         wattage: wattage,
         ldr: ldr
-    }
+    };
 
     deviceRef.child("telemetry/latest").set(telemetry, function(err) {
         if (!err) {
@@ -160,12 +159,14 @@ function setLightSensorEnabled(enabled) {
         ldrCheckIntervalId = setInterval(function() {
             var ldr = wpi.analogRead(201);
             console.log("LDR: ", ldr);
+
+            //200 is threshold to switch on the lamp. Change it according your surrounding or provide more robust logic.
             if (ldr < 200) {
-                //setState(true);
-                //set firebase instead
+
+                //set to firebase so that params changes propagated across all listening parties.
                 var params = {
                     state: true,
-                    lightSensorEnabled: true,
+                    lightSensorEnabled: true
                 };
 
                 deviceRef.child("parameters").set(params, function(err) {
