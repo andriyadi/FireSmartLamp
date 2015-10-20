@@ -31,11 +31,28 @@ Your knowledge around Firebase is fully usable in this IoT scenario.
 To properly deploy the project, you need to prepare following components:
 
 * Raspberry Pi 2 with Raspbian OS. Node.js runtime should be installed.
-* Solid state AC switch circuit (will detail it later)
+* Solid state AC switch circuit (find the circuit [here](http://www.slideshare.net/andri_yadi/firebase-54159652/36?src=clipshare))
 * AC light bulb
 * AC current sensor ACS712 5A
 * Analog to Digital Converter IC MCP3008
 * Voltage divider circuit to convert 5 volts to 3.3 volts. Output from ACS712 is 5 volts, while Raspberry Pi expects 3.3 volts.
-* Light-dependent Resistor (LDR) and voltage-divider resistor
+* Light-dependent Resistor (LDR) and a 10K resistor
+
+The circuit involved in this project is explained [here](http://www.slideshare.net/andri_yadi/firebase-54159652/41?src=clipshare)
+
+
+##Run the app
+The app is written in Node.js and run in Raspberry Pi. For that, you need to install Node.js runtime in Raspberry Pi OS. 
+Here I use Raspbian, but I guess you can use any Linux-based OS, as long as you are managed to install Node.js runtime in it.
+
+Then, you need to have Firebase account. Sign up [here](http://firebase.com/signup/) if you haven't. 
+Then create a new Firebase app and you'll get an URL, e.g: `http://my-iot.firebaseio.com`, where `my-iot` is your Firebase Project ID.
+
+In `index.js` file, about line 58, change `[YOUR-OWN-FIREBASEAPP]` in `https://[YOUR-OWN-FIREBASEAPP].firebaseio.com` with your Firebase Project ID.
+
+That's it (if my memory serves me well :P). Found bugs or issues or have question? Create an issue or you can always contact me at: `an dot dri at me dot com`.
+
+Enjoy!
+
 
 
