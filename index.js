@@ -74,7 +74,7 @@ var deviceDesc = {
             "longitude": -122.191285
         }
     },
-    "parameter": {
+    "parameters": {
         lightSensorEnabled: false,
         state: false
     }
