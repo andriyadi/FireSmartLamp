@@ -10,6 +10,8 @@ and that change will be propagated to and processed by IoT device to do some act
 I use this demo to talk about Firebase in 2 GDG DevFest events, in [Jakarta](https://sites.google.com/a/kibar.co.id/devfest-indonesia-2015/program/jakarta)
 (Oct 17) and [Surabaya](https://sites.google.com/a/kibar.co.id/devfest-indonesia-2015/program/surabaya) (Oct 18).
 
+The story behind this project is in [this deck](http://www.slideshare.net/andri_yadi/firebase-54159652)
+
 
 ##Background
 My team in [DyCode](http://dycode.co.id) and I have been using Firebase since early 2014 in several products and projects. So, I know a bit about Firebase :)

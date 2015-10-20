@@ -55,7 +55,7 @@ var server = app.listen(1337, function () {
 //4. Get Firebase Ref
 var deviceId = "smartlamp1";
 
-var myFirebaseRef = new Firebase("https://[YOUR-OWN-FIREBASEAPP].firebaseio.com");
+var myFirebaseRef = new Firebase("https://dycode-iot.firebaseio.com");
 var devicesFirebaseRef = myFirebaseRef.child("devices");
 
 var deviceRef = devicesFirebaseRef.child(deviceId);
@@ -131,14 +131,23 @@ setInterval(function() {
 
     var telemetry = {
         wattage: wattage,
-        ldr: ldr
+        ldr: ldr,
+        timestamp: Date.now()
     };
 
+    //Set the latest telemetry
     deviceRef.child("telemetry/latest").set(telemetry, function(err) {
         if (!err) {
 
         }
         else {
+            console.error(err);
+        }
+    });
+
+    //Optionally, you may push logs of telemetry, so you can process the logs for - say - analytics.
+    deviceRef.child("telemetry/logs").push(telemetry, function(err) {
+        if (err) {
             console.error(err);
         }
     });
