@@ -54,10 +54,51 @@ Finally, don't forget to run
 ```npm install```
 to download and install all required Node.js modules.
 
-
-That's it (if my memory serves me well :P). Found bugs or issues or have question? Create an issue or you can always contact me at: `an dot dri at me dot com`.
+That's it (if my memory serves me well :P). Found bugs or issues or have question? Create an issue or you can always contact me at contacts below.
 
 Enjoy!
+
+
+##Android app
+I made a basic Android app for controlling this smart lamp. Now you can actually turn on/off the lamp from anywhere in the world :)
+
+Get it here: [https://github.com/andriyadi/FireSmartLamp-Android](https://github.com/andriyadi/FireSmartLamp-Android)
+
+
+##Contact me
+
+Andri Yadi
+
+* Email: an dot dri at me dot com
+* Twitter: http://twitter.com/andri_yadi
+* LinkedIn: https://www.linkedin.com/in/andriyadi
+
+For professional services, you can contact my company: office at dycode dot com
+
+##Using it
+You're welcome to use it in your projects and make any changes. Just please keep the acknowledgement.
+
+##License
+Copyright (c) 2015 Andri Yadi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
 
 
